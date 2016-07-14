@@ -6,7 +6,7 @@ function barchart(){
 	function years(sel){
 		selection = sel;
 
-		d3.csv("http://www.energiebeteiligt.de/all", function(e, d) {
+		d3.csv("data.csv", function(e, d) {
 			var y = [];
 			for(var i = 0; i<d.length; i++){
 				var exists = false;
