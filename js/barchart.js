@@ -6,7 +6,11 @@ function barchart(){
 	function years(sel){
 		selection = sel;
 
-		d3.csv("data.csv", function(e, d) {
+
+
+
+		d3.csv("YOUR_CSV_FILE", function(e, d) {
+
 			var y = [];
 			for(var i = 0; i<d.length; i++){
 				var exists = false;
